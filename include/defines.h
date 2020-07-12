@@ -1,3 +1,5 @@
+#define FW_VERSION 1.0.0
+
 //Definitions for TM1637 segments
 
 #define TM1637_ECO

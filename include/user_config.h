@@ -1,0 +1,15 @@
+//Set your wheel size
+
+//#define WHEEL_10
+#define WHEEL_85
+
+#define USE_BLUETOOTH_FUNCTIONALITY
+#define USE_MI_SERVICES
+
+//#define PASSCODE
+
+#define MAX_SPEED_IN_KMH 25
+#define BATTERYCAPACITY 0
+#define BAUDRATE 115200
+#define KERS_SPEED_IN_KMH 10
+#define KERSINTENSITY 1
