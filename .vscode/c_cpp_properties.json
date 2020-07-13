@@ -1,6 +1,6 @@
 {
     "env": {
-        "myDefaultIncludePath": ["${workspaceFolder}", "${workspaceFolder}/include"]
+        "myDefaultIncludePath": ["${workspaceFolder}", "${workspaceFolder}/include", "C:/ProgramData/chocolatey/lib/nrf-sdk/tools/nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal"]
         
       },
     "configurations": [
@@ -19,7 +19,8 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/include",
-                    "${workspaceFolder}"
+                    "${workspaceFolder}",
+                    "C:/ProgramData/chocolatey/lib/nrf-sdk/tools/nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal"
                 ]
             }
         }

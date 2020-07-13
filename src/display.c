@@ -1,5 +1,5 @@
 #include <include/defines.h>
-#include "nrf_gpio.h"
+#include <nrf_gpio.h>
 
 void TM1637_Init() {
     nrf_gpio_cfg_pin_input(TM1637_DIO, NRF_GPIO_PIN_PULLDOWN);

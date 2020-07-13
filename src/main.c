@@ -5,20 +5,74 @@
 #include <include/strings.h>
 
 typedef enum {false, true} bool;
-bool isStopped;
+
+bool isStopped = true;
+
+void handleButton(){
+    
+}
+
+void handleFWupd(){
+    //check if firmware update is needed
+}
+
+void handleLocking(){
+
+}
+
+void handleShutdown(){
+
+}
+
+void handleCommands(){
+
+}
+
+float getSpeed(){
+    float speed;
+
+    return speed;
+}
+
+void handleSpeedometer(){
+
+}
+
+void handleHandles(){
+
+}
+
+void updateDisplay(){
+
+}
 
 int main() {
     
-    bool isRolling = !isStopped;
+    
     //Check if factory reset combo
     
     TM1637_Init();
     //Setup stuff
+    //Setup bluetooth
+    //Connection stuff
     //Setup serial
 
     while (1){
+        if (isStopped) {
+            handleFWupd();
+            handleLocking();
+            handleShutdown();
+        }
+
         //Check if stopped, then
             //Firmware update?
+            //Shutdown?
+        
+        handleCommands();
+        updateSpeedometer();
+        handleButton();
+        handleHandles();
+        updateDisplay();
         //Check incoming command
         //Process command
             //Serial
@@ -27,10 +81,15 @@ int main() {
             //Timer
                 //switch
                     //LED
+                    //Mode
                     //Cruise control
         //Handle handles
         //Cruise control update
         //Check battery state
-        //Handle LEDs
+        //Handle Display
+
+        if (floor(getSpeed()) <= 1){
+            isStopped = true;
+        }
     }
 }

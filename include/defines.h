@@ -1,6 +1,6 @@
 //Definitions for TM1637 segments
 
-#define TM1637_ECO
+#define TM1637_ECO 
 #define TM1637_DRIVE
 #define TM1637_SPORT
 #define TM1637_LIGHT
@@ -17,14 +17,15 @@
 
 //Definitions for GPIO
 
-#define TM1637_DIO
-#define TM1637_CLK
+#define TM1637_DIO  NRF_GPIO_PIN_MAP(PORT,PIN)
+#define TM1637_CLK  NRF_GPIO_PIN_MAP(PORT,PIN)
 //There are 3 pins connected to both ports. Weird. P0.25, P0.04 and P0.05
 
-#define UART_PIN_RX
-#define UART_PIN_TX
+#define UART_PIN_RX NRF_GPIO_PIN_MAP(PORT,PIN)
+#define UART_PIN_TX NRF_GPIO_PIN_MAP(PORT,PIN)
 #define UART_PARITY
 #define UART_FLOWCONTROL
 
-#define BRAKE_PIN
-#define ACCELLERATOR_PIN
+#define BRAKE_PIN   NRF_GPIO_PIN_MAP(PORT,PIN)
+#define ACCELLERATOR_PIN    NRF_GPIO_PIN_MAP(PORT,PIN)
+#define BUTTON_PIN  NRF_GPIO_PIN_MAP(PORT,PIN)
