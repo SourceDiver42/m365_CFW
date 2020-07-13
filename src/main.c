@@ -4,6 +4,12 @@
 #include <include/display.h>
 #include <include/strings.h>
 
+#include <stdbool.h>
+#include <stdint.h>
+
+#include "FreeRTOS.h"
+#include "task.h"
+
 typedef enum {false, true} bool;
 
 bool isStopped = true;
@@ -46,14 +52,80 @@ void updateDisplay(){
 
 }
 
+static void display_update_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    while (true)
+    {
+        
+
+        
+    }
+}
+
+static void command_handler_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    while (true)
+    {
+        
+
+        
+    }
+}
+
+static void button_handler_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    while (true)
+    {
+        
+
+        
+    }
+}
+
+static void input_handler_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    while (true)
+    {
+        
+
+        
+    }
+}
+
+static void mi_setup_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+
+    //Mi one-time stuff
+
+
+    //Mi data loop
+    while (true)
+    {
+        
+
+        
+    }
+}
+
+static void locking_handler_task_function (void * pvParameter)
+{
+    UNUSED_PARAMETER(pvParameter);
+    while (true)
+    {
+        
+
+        
+    }
+}
+
 int main() {
-    //Task:mi service connection setup & persistence
-    //Task: Display handling
-    //Task: commands
-    //Task: button
-    //Task: input
     
-    
+
     //Check if factory reset combo
     
     TM1637_Init();
