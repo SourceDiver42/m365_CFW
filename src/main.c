@@ -9,7 +9,7 @@ typedef enum {false, true} bool;
 bool isStopped = true;
 
 void handleButton(){
-    
+
 }
 
 void handleFWupd(){
@@ -47,6 +47,11 @@ void updateDisplay(){
 }
 
 int main() {
+    //Task:mi service connection setup & persistence
+    //Task: Display handling
+    //Task: commands
+    //Task: button
+    //Task: input
     
     
     //Check if factory reset combo
